@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+body{
+    background: linear-gradient(to right, #00AAFF,#00FF6C);
+
+}
+
+.gid-container{
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      min-height: 100vh;
+       grid-template-columns: repeat(4, 100px);
+       grid-template-rows: minmax(120px ,auto) repeat(5, 100px);
+}
+
+.gid-container> button{
+  
+     cursor: pointer;
+     font-size: 2rem;
+     border: 1px solid #fff;
+     outline: none;
+     background-color: rgb(255, 255,255, .75);
+     
+}
+
+.gid-container> button:hover{
+    background-color: rgb(255, 255,255, .9);
+}
+
+/*=========Grid output/result area ===========*/
+
+.calculator-output{
+    grid-column: 1/-1;
+    background-color: rgb(0,0,0, .5);
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size:xx-large;
+    font-weight: bold;
+}
+
+.span-tow{
+    grid-column: span 2;
+}
